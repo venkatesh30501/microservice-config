@@ -25,5 +25,5 @@ server:
   port: 8081
 
 cart:
-  message: Welcome to the Cart yyyyyyyyyy!
+  message: Welcome to the Cart uuuuuuuu!
   apikey: api_key_12345
