@@ -23,3 +23,7 @@ spring:
 
 server:
   port: 8083
+
+inventory:
+  message: Welcome to the Inventory Service!
+  apikey: api_key_54321

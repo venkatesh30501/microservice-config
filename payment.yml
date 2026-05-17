@@ -24,3 +24,7 @@ spring:
 
 server:
   port: 8086
+
+payment:
+  message: Welcome to the Payment Service!
+  apikey: api_key_13579

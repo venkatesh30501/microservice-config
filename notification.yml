@@ -24,3 +24,7 @@ spring:
 
 server:
   port: 8089
+
+notification:
+  message: Welcome to the Notification Service!
+  apikey: api_key_98765
