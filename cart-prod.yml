@@ -1,0 +1,26 @@
+spring:
+  application:
+    name: cart
+
+  datasource:
+    url: jdbc:mysql://localhost:3306/cart_db?createDatabaseIfNotExist=true
+    username: "{cipher}9ffce7092605192fe38036703dead8eba57b795faa5e04bd93ed6880ab1f1f63"
+    password: root@123
+    driver-class-name: com.mysql.cj.jdbc.Driver
+
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.MySQLDialect
+        format_sql: true
+
+server:
+  port: 8081
+
+cart:
+  message: Welcome to the Cart Service!
+  apikey: api_key_12345
