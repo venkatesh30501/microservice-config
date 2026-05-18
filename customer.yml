@@ -23,5 +23,5 @@ server:
   port: 8082
 
 customer:
-  message: Welcome to the Customer Service!
+  message: Welcome to the Customer Service app!
   apikey: api_key_67890
