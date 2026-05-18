@@ -23,4 +23,4 @@ server:
 
 cart:
   message: Welcome to the Cart Service!
-  apikey: api_key_12345
+  apikey: api_key_123456
