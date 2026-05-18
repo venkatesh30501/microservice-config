@@ -2,9 +2,6 @@ spring:
   application:
     name: shipping
 
-  jackson:
-    property-naming-strategy: SNAKE_CASE
-
   datasource:
     url: jdbc:mysql://localhost:3306/shipping_db?createDatabaseIfNotExist=true
     username: root
