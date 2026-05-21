@@ -8,12 +8,6 @@ spring:
     password: root@123
     driver-class-name: com.mysql.cj.jdbc.Driver
 
-  rabbitmq:
-    host: rabbitmq
-    port: 5672
-    username: guest
-    password: guest
-
   jpa:
     hibernate:
       ddl-auto: update
@@ -24,6 +18,12 @@ spring:
       hibernate:
         dialect: org.hibernate.dialect.MySQLDialect
         format_sql: true
+
+  rabbitmq:
+    host: rabbitmq
+    port: 5672
+    username: guest
+    password: guest
 
 server:
   port: 8085
