@@ -29,4 +29,4 @@ server:
 
 product:
   message: Welcome to the Product Service!
-  apikey: api_key_54321
+  apikey: api_key_543
