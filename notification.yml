@@ -12,7 +12,6 @@ spring:
     hibernate:
       ddl-auto: update
     show-sql: true
-
     properties:
       hibernate:
         dialect: org.hibernate.dialect.MySQLDialect
@@ -24,10 +23,29 @@ spring:
     username: guest
     password: guest
 
+  kafka:
+    bootstrap-servers: kafka-1:9092
+
+    consumer:
+      auto-offset-reset: earliest
+      key-deserializer: org.apache.kafka.common.serialization.StringDeserializer
+      value-deserializer: org.apache.kafka.common.serialization.StringDeserializer
+      enable-auto-commit: false
+
+    producer:
+      key-serializer: org.apache.kafka.common.serialization.StringSerializer
+      value-serializer: org.springframework.kafka.support.serializer.JsonSerializer
+      properties:
+        spring.json.add.type.headers: false
+
+    listener:
+      ack-mode: RECORD
+      concurrency: 3
+      missing-topics-fatal: false
 
 server:
   port: 8084
 
 notification:
-  message: Welcome to the Notification Service!
-  apikey: api_key_98765
+  message: "Welcome to the Notification Service!"
+  apikey: "api_key_98765"
