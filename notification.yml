@@ -49,3 +49,9 @@ server:
 notification:
   message: "Welcome to the Notification Service!"
   apikey: "api_key_98765"
+
+
+logging:
+  level:
+    org.apache.kafka: DEBUG
+    org.springframework.kafka: DEBUG
