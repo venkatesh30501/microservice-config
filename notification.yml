@@ -53,5 +53,5 @@ notification:
 
 logging:
   level:
-    org.apache.kafka: DEBUG
-    org.springframework.kafka: DEBUG
+    org.apache.kafka: INFO
+    org.springframework.kafka: INFO
