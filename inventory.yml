@@ -50,3 +50,9 @@ server:
 inventory:
   message: Welcome to the Inventory Service!
   apikey: api_key_54
+
+
+logging:
+  level:
+    org.apache.kafka: INFO
+    org.springframework.kafka: INFO
